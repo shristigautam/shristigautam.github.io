@@ -1,0 +1,39 @@
+body {
+    font-family: monospace, sans-serif;
+    background-color: aliceblue;
+    color: darkslategrey;
+}
+
+#heading {
+    font-family: cursive, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+h3 {
+    background: #d9e8f5;
+    width: fit-content;
+}
+
+p {
+    font-size: 20px;
+}
+
+.current {
+    font-weight: bold;
+}
+
+section#faces {
+    display: flex;
+}
+
+section#faces>div {
+    width: 50%;
+    text-align: center;
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
