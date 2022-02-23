@@ -3,8 +3,9 @@ body {
     font-size: 11pt;
     color: #404040;
     font-family: Georgia, Garamond, serif;
-    /* Extra 1 */
-    background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+    /* Extra 1 : Due to CORS error, the image couldn't be loaded from server, so used local image*/
+    /* background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg"); */
+    background-image: url("../recipeImages/background.gif");
     background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;
