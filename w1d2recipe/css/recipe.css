@@ -1,12 +1,13 @@
-* {
-    background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
-}
-
 body {
-    background-color: white;
+    /* background-color: white; */
     font-size: 11pt;
     color: #404040;
     font-family: Georgia, Garamond, serif;
+    /* Extra 1 */
+    background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 body a {
@@ -24,19 +25,32 @@ h6 {
     font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
     font-size: 18pt;
     text-decoration: underline;
+    /* Extra 5 */
+    width: fit-content;
     text-align: left;
+    /*Extra 4*/
+    letter-spacing: 0.25em;
 }
 
 
 /* Ids prefixed with # */
 
 #mainHeading {
+    /* To align to center, the width is made 100%, else it would inherit from  line 29 above */
+    width: 100%;
     text-align: center;
     font: 22pt bold;
 }
 
 #upperCaseHeading {
     text-transform: uppercase;
+}
+
+
+/* Extra 3 */
+
+ul {
+    list-style-image: url('../images/pie_icon.gif');
 }
 
 
@@ -47,10 +61,17 @@ ol>li>span {
 }
 
 
-/* It is a class, so prefixed with a . */
+/* It is an id, so prefixed with a . */
 
-.quotes {
-    /* padding: ; */
+#quotes {
     background-color: #FFFFA8;
     font-style: italic;
+}
+
+
+/*Last letter is aligned right */
+
+.copyright {
+    font-family: monospace;
+    text-align-last: right;
 }
