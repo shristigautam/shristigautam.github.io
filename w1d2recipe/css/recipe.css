@@ -1,0 +1,56 @@
+* {
+    background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+}
+
+body {
+    background-color: white;
+    font-size: 11pt;
+    color: #404040;
+    font-family: Georgia, Garamond, serif;
+}
+
+body a {
+    color: #A4A400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    text-decoration: underline;
+    text-align: left;
+}
+
+
+/* Ids prefixed with # */
+
+#mainHeading {
+    text-align: center;
+    font: 22pt bold;
+}
+
+#upperCaseHeading {
+    text-transform: uppercase;
+}
+
+
+/* only immediate span after li will get bold */
+
+ol>li>span {
+    font-weight: bold;
+}
+
+
+/* It is a class, so prefixed with a . */
+
+.quotes {
+    /* padding: ; */
+    background-color: #FFFFA8;
+    font-style: italic;
+}
