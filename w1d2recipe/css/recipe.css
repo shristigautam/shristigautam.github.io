@@ -14,6 +14,9 @@ body a {
     color: #A4A400;
 }
 
+
+/* The question says all headings, so I wrote all */
+
 h1,
 h2,
 h3,
@@ -36,8 +39,9 @@ h6 {
 /* Ids prefixed with # */
 
 #mainHeading {
-    /* To align to center, the width is made 100%, else it would inherit from  line 29 above */
-    width: 100%;
+    /* To align to center, I used margin */
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font: 22pt bold;
 }
