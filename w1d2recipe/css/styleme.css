@@ -34,8 +34,13 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: green;
+}
+
 .current {
     font-weight: bold;
+    color: green;
 }
 
 section#faces {
