@@ -19,6 +19,17 @@ p {
     font-size: 20px;
 }
 
+p::first-letter {
+    font-size: 150%;
+}
+
+
+/* Extra: Making hyperlink not underloned by default */
+
+a {
+    text-decoration: none;
+}
+
 .current {
     font-weight: bold;
 }
@@ -36,4 +47,8 @@ section#faces>div {
     height: 200px;
     width: 200px;
     object-fit: contain;
+}
+
+ol span {
+    color: red;
 }
