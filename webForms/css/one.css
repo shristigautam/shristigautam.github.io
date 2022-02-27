@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-size: 24px;
+    font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -11,7 +11,7 @@ main {
 }
 
 .label {
-    margin: 24px 8px;
+    margin: 16px 8px;
 }
 
 .input {
@@ -19,12 +19,12 @@ main {
     padding: 16px;
     border: 1px solid #8d8d8d;
     border-radius: 10px;
-    height: 5vh;
+    height: 4vh;
 }
 
 input {
     border: none;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 
