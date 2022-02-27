@@ -17,24 +17,35 @@
     </header>
     <main>
         <form method="post" action="">
-            <div class="label">
-                <label for="email" class="label">Email address</label>
-            </div>
-            <div class="input">
-                <input autofocus type="email" name="email" id="email" placeholder="Enter email">
-            </div>
-            <span id="disclaimer"> We will never share your email with anyone else.</span>
-
-            <div class="label">
-                <label for="password" class="label">Password</label>
-            </div>
-            <div class="input">
-                <!-- in HTML5, the anchors ^ and $ are implicit, so no need to put ^ and $ -->
-                <input type="password" name="password" id="password" placeholder="Password" title="Must be at least 10 characters long and contain at least one number and one uppercase and lowercase letter !" minlength="10" pattern="[(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{10,}]">
-                <!-- (?=A)B means Find expression A first, if found then expression B follows -->
-                <!-- [a-zA-Z\d] means a-z or A-Z or d -->
+            <div>
+                <div class="label">
+                    <label for="email" class="label">Email address</label>
+                </div>
+                <div class="input">
+                    <input autofocus type="email" name="email" id="email" placeholder="Enter email">
+                </div>
+                <span id="disclaimer"> We will never share your email with anyone else.</span>
             </div>
 
+            <div>
+                <div class="label">
+                    <label for="password" class="label">Password</label>
+                </div>
+                <div class="input">
+                    <!-- in HTML5, the anchors ^ and $ are implicit, so no need to put ^ and $ -->
+                    <input type="password" name="password" id="password" placeholder="Password" required minlength="10" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*?[0-9]).{10,}" title="Must be at least 10 characters long and contain at least one number and one uppercase and lowercase letter !">
+                    <!-- (?=A)B means Find expression A first, if found then expression B follows -->
+                </div>
+            </div>
+            <div>
+                <div class="label">
+                    <label for="website">Website</label>
+                </div>
+                <div class="input">
+                    <input type="text" id="website" name="website" placeholder="Enter website" repattern="https?://.+" title="Enter URL beginning with the string, http:// or https://" required/>
+                </div>
+                <p class="tip">Please enter a valid URL. For example: https://www.miu.edu</p>
+            </div>
             <div class="checkbox">
                 <input type="checkbox" name="checkme" id="checkme">
                 <label for="checkme">Check me out </label>
