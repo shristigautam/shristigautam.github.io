@@ -33,7 +33,8 @@
                 </div>
                 <div class="input">
                     <!-- in HTML5, the anchors ^ and $ are implicit, so no need to put ^ and $ -->
-                    <input type="password" name="password" id="password" placeholder="Password" required minlength="10" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*?[0-9]).{10,}" title="Must be at least 10 characters long and contain at least one number and one uppercase and lowercase letter !">
+                    <!-- "(?=.*[A-Z])(?=.*[a-z])(?=.*?[0-9]).{10,}" also works -->
+                    <input type="password" name="password" id="password" placeholder="Password" required minlength="10" pattern="(?=\d+) (?=[a-z]*) (?=[A-Z]*).{10,}" title="Must be at least 10 characters long and contain at least one number and one uppercase and lowercase letter !">
                     <!-- (?=A)B means Find expression A first, if found then expression B follows -->
                 </div>
             </div>
