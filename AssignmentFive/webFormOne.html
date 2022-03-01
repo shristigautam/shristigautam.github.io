@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/one.css">
+    <script src="./js/QuestionFourteen.js"></script>
+    <title>Web Form One</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <form method="get" onsubmit="Submit(this)">
+            <div>
+                <div class="label">
+                    <label for="email" class="label">Email address</label>
+                </div>
+                <div class="input">
+                    <input autofocus type="email" name="email" id="email" placeholder="Enter email">
+                </div>
+                <span id="disclaimer"> We will never share your email with anyone else.</span>
+            </div>
+
+            <div>
+                <div class="label">
+                    <label for="password" class="label">Password</label>
+                </div>
+                <div class="input">
+                    <!-- in HTML5, the anchors ^ and $ are implicit, so no need to put ^ and $ -->
+                    <!-- "(?=.*[A-Z])(?=.*[a-z])(?=.*?[0-9]).{10,}" also works -->
+                    <input type="password" name="password" id="password" placeholder="Password" required minlength="10" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*?[0-9]).{10,}" title="Must be at least 10 characters long and contain at least one number and one uppercase and lowercase letter !">
+                    <!-- (?=A)B means Find expression A first, if found then expression B follows -->
+                </div>
+            </div>
+            <div>
+                <div class="label">
+                    <label for="website">Website</label>
+                </div>
+                <div class="input">
+                    <input type="text" id="website" name="website" placeholder="Enter website" pattern="https?://.+" title="Enter URL beginning with the string, http:// or https://" required/>
+                </div>
+                <span id="disclaimer">Please enter a valid URL. For example: https://www.miu.edu</span>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="checkme" id="checkme">
+                <label for="checkme">Check me out </label>
+            </div>
+            <div>
+                <input type="submit" value="Submit" id="submit">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
