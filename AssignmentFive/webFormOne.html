@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/one.css">
-    <script src="./js/QuestionFourteen.js"></script>
+    <script src="./js/QuestionFourteen.js" defer></script>
     <title>Web Form One</title>
 </head>
 
@@ -17,7 +17,7 @@
         </nav>
     </header>
     <main>
-        <form method="get" onsubmit="Submit(this)">
+        <form id="FormOne" method="get" onsubmit="event.preventDefault(); Submit(this)">
             <div>
                 <div class="label">
                     <label for="email" class="label">Email address</label>

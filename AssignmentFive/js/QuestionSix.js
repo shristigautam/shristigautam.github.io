@@ -9,5 +9,4 @@ function findLongestWord(arr) {
     }
     return longest.length;
 }
-
 console.log("6) The longest length among hi, hello and bye is:" + findLongestWord(["hi", "hello", "bye"]));

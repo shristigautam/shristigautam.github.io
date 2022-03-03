@@ -3,12 +3,12 @@
 function computeSumOfSquares(arr) {
     // reduce(callback(previous, currentValue, currentIndex, array),[initValue])
     // Left to Right to single value, every return is new previous just like recursion
-    const sumSquares = arr.reduce(function(previous, val, i, arr) {
-        return previous + val * val;
-    }, 0);
+    const sumSquares = arr.reduce((a, b) => a + b * b);
     return sumSquares;
-
-    // Alternative Way by using lambda
-    // return arr.map(x => x * x).reduce((x, y) => x + y);
 }
+
+
+// Alternative Way by using lambda
+// return arr.map(x => x * x).reduce((x, y) => x + y);
+
 console.log("8) The sum of squared of [1,2,3] is: " + computeSumOfSquares([1, 2, 3]));

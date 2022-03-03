@@ -3,11 +3,17 @@ a.	Login Form: Add code such that when the Submit button is clicked, the values 
 b.	New Product Form: Add code such that when the Submit button is clicked, the values entered in the input fields are displayed in a pop-up window.
 */
 
+//Professor's way to doing that
+const FormOne = document.getElementById("FormOne");
+FormOne.addEventListener("submit", Submit(FormOne));
+// or do FormOne.onsubmit()
+
+
 function Submit(thisForm) {
+    //Professor's way
     // console.log("Email: " + document.getElementById('email').value);
     // console.log("Website: " + document.getElementById('website').value);
     // console.log("Check me out: " + document.getElementById('checkme').value);
-
     let resultStr = '';
     for (let i = 0; i < thisForm.elements.length; i++) {
         resultStr += thisForm.elements[i].name + ": " + thisForm.elements[i].value + "\n";
