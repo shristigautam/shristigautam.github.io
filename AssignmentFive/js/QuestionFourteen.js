@@ -5,10 +5,18 @@ b.	New Product Form: Add code such that when the Submit button is clicked, the v
 
 //Professor's way to doing that
 const FormOne = document.getElementById("FormOne");
-FormOne.addEventListener("submit", Submit(FormOne));
+FormOne.addEventListener("submit", printFormData(event));
 // or do FormOne.onsubmit()
 
+function printFormData() {
+    event.preventDefault();
+    const textEmail = document.getElementById('email');
+    console.log(textEmail.value);
+}
 
+
+
+//My way
 function Submit(thisForm) {
     //Professor's way
     // console.log("Email: " + document.getElementById('email').value);
