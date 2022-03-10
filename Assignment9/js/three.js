@@ -1,21 +1,22 @@
 function Person() {
     this.name = null;
     this.dateOfBirth = null;
-    this.getName = function() {
+    this.getName = function () {
         return this.name;
     };
-    this.setName = function(name) {
+    this.setName = function (name) {
         this.name = name;
     };
-    this.toString = function(string) {
-        let formattedDate = this.dateOfBirth.getFullYear() + "-" +
-            (this.dateOfBirth.getMonth() + 1) + "-" + this.dateOfBirth.getDate();
-        console.log(`${this.getName()} was born on ${formattedDate}`);
-        //To return as object
-        // let returnString1 = { Name: this.name, DateOfBirth: formattedDate };
-        let returnString = `{Name:${this.name}, DateOfBirth:${formattedDate} }`;
-        console.log(returnString);
-    }
+}
+//do toString like this
+Person.prototype.toString = function (string) {
+    let formattedDate = this.dateOfBirth.getFullYear() + "-" +
+        (this.dateOfBirth.getMonth() + 1) + "-" + this.dateOfBirth.getDate();
+    console.log(`${this.getName()} was born on ${formattedDate}`);
+    //To return as object
+    // let returnString1 = { Name: this.name, DateOfBirth: formattedDate };
+    let returnString = `{Name:${this.name}, DateOfBirth:${formattedDate} }`;
+    console.log(returnString);
 }
 
 const Peter = new Person();
